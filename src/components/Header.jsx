@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <nav className="navbar w-full h-[5rem] px-4 flex justify-between items-center shadow-sm shadow-green-600 relative">
       <Link to="/">
-        <span className="logo text-5xl font-bold text-green-700">HTQ</span>
+        <span className="logo text-5xl font-bold text-black">HT<span className="text-5xl font-bold text-green-500">Q</span></span>
       </Link>
       <ul className="navbar-list hidden gap-6 text-xl md:flex md:items-center">
           <Link to="/about-us" className="py-2 px-4 bg-green-500 hover:bg-green-600 transition text-green-50 rounded">Über Uns</Link>
@@ -28,11 +28,11 @@ const Header = () => {
       </button>
       {isMenuOpen && (
         <div className="dropdown-menu flex flex-col items-center justify-evenly bg-green-500 border border-green-700 rounded shadow-sm shadow-green-700 mx-auto py-2 w-3/4 absolute z-50">
-          <Link to="/" className="py-6 w-3/4 bg-green-700 hover:bg-green-800 rounded text-green-50 text-xl text-center">Home</Link>
-          <Link to="/about-us" className="py-6 w-3/4 bg-green-700 hover:bg-green-800 rounded text-green-50 text-xl text-center">Über Uns</Link>
-          <Link to="/services" className="py-6 w-3/4 bg-green-700 hover:bg-green-800 rounded text-green-50 text-xl text-center">Unser Service</Link>
-          <Link to="/cooperation" className="py-6 w-3/4 bg-green-700 hover:bg-green-800 rounded text-green-50 text-xl text-center">Kooperation</Link>
-          <Link to="/contact" className="py-6 w-3/4 bg-green-700 hover:bg-green-800 rounded text-green-50 text-xl text-center">Kontakt</Link>
+          <Link to="/" className="py-5 w-3/4 bg-green-700 hover:bg-green-800 rounded text-green-50 text-xl text-center">Home</Link>
+          <Link to="/about-us" className="py-5 w-3/4 bg-green-700 hover:bg-green-800 rounded text-green-50 text-xl text-center">Über Uns</Link>
+          <Link to="/services" className="py-5 w-3/4 bg-green-700 hover:bg-green-800 rounded text-green-50 text-xl text-center">Unser Service</Link>
+          <Link to="/cooperation" className="py-5 w-3/4 bg-green-700 hover:bg-green-800 rounded text-green-50 text-xl text-center">Kooperation</Link>
+          <Link to="/contact" className="py-5 w-3/4 bg-green-700 hover:bg-green-800 rounded text-green-50 text-xl text-center">Kontakt</Link>
         </div>
       )}
     </nav>
