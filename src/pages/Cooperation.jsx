@@ -3,7 +3,7 @@
 const Cooperation = () => {
     return (
         <div>
-            <h1>Cooperation</h1>
+            <h1 className="mt-10 text-3xl font-bold text-center">Kooperation</h1>
         </div>
     )
 }

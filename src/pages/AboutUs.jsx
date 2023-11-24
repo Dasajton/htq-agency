@@ -3,7 +3,7 @@
 const AboutUs = () => {
     return (
         <div>
-            <h1>About Us</h1>
+            <h1 className="mt-10 text-3xl font-bold text-center">Über Uns</h1>
         </div>
     )
 }
