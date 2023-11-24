@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.dropdown-menu {
+    height: calc(100vh - 7rem);
+    top: 6rem;
+    right: 0;
+    left: 0;
+}
+
+
+
