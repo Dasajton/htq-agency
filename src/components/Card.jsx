@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 
 const Card = (props) => {
     return (
@@ -8,7 +8,9 @@ const Card = (props) => {
             <h2 className="text-2xl sm:text-2xl xl:text-3xl font-medium text-blue-700 p-2">{props.title}</h2>
             <p className="text-lg overflow-hidden p-2">{props.description}</p>
             </div>
-            <button className="p-4 my-6 bg-blue-600 hover:bg-blue-700 rounded text-blue-50">Mehr erfahren</button>
+            <button className="p-4 my-6 bg-blue-600 hover:bg-blue-700 rounded text-blue-50 shadow-sm shadow-blue-900 focus:outline-none focus:ring focus:border-blue-300">
+                <Link to="/services">Mehr Erfahren</Link>
+            </button>
 
 
         </div>
