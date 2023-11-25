@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
@@ -6,11 +6,23 @@ const Header = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-
-
-
-
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+
+      if (window.innerWidth >= 768 && isMenuOpen) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [isMenuOpen]);
+  
 
   return (
     <nav className="navbar w-full h-[5rem] px-4 flex justify-between items-center shadow-sm shadow-green-600 relative">
