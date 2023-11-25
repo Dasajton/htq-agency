@@ -40,18 +40,18 @@ const Header = () => {
         </ul>
       <button className="dropdown-btn md:hidden cursor-pointer" onClick={toggleMenu}>
         {isMenuOpen ? (
-          <img src="./icons/close-icon.svg" alt="Close Menu" className="close-menu" />
+          <img src="/icons/close-icon.svg" alt="Close Menu" className="close-menu" />
         ) : (
           <img src="/icons/burger-icon.svg" alt="Burger Menu" className="burger-menu" />
         )}
       </button>
       {isMenuOpen && (
         <div className="dropdown-menu flex flex-col items-center justify-evenly bg-blue-600 border border-blue-700 rounded shadow-sm shadow-blue-700 mx-auto py-2 w-3/4 h-[32rem] absolute z-50 top-24 right-0 left-0 overflow-y-auto">
-          <Link onClick={toggleMenu} to="/" className="py-5 w-3/4 bg-blue-800 hover:bg-blue-900 rounded shadow-md text-green-50 text-xl text-center">Home</Link>
-          <Link onClick={toggleMenu} to="/about-us" className="py-5 w-3/4 bg-blue-800 hover:bg-blue-900 rounded shadow-md text-green-50 text-xl text-center">Über Uns</Link>
-          <Link onClick={toggleMenu} to="/services" className="py-5 w-3/4 bg-blue-800 hover:bg-blue-900 rounded shadow-md text-green-50 text-xl text-center">Unser Service</Link>
-          <Link onClick={toggleMenu} to="/cooperation" className="py-5 w-3/4 bg-blue-800 hover:bg-blue-900 rounded shadow-md text-green-50 text-xl text-center">Kooperation</Link>
-          <Link onClick={toggleMenu} to="/contact" className="py-5 w-3/4 bg-blue-800 hover:bg-blue-900 rounded shadow-md text-green-50 text-xl text-center">Kontakt</Link>
+          <Link onClick={toggleMenu} to="/" className="py-5 w-3/4 bg-blue-800 hover:bg-blue-900 rounded shadow-md text-blue-50 text-xl text-center">Home</Link>
+          <Link onClick={toggleMenu} to="/about-us" className="py-5 w-3/4 bg-blue-800 hover:bg-blue-900 rounded shadow-md text-blue-50 text-xl text-center">Über Uns</Link>
+          <Link onClick={toggleMenu} to="/services" className="py-5 w-3/4 bg-blue-800 hover:bg-blue-900 rounded shadow-md text-blue-50 text-xl text-center">Unser Service</Link>
+          <Link onClick={toggleMenu} to="/cooperation" className="py-5 w-3/4 bg-blue-800 hover:bg-blue-900 rounded shadow-md text-blue-50 text-xl text-center">Kooperation</Link>
+          <Link onClick={toggleMenu} to="/contact" className="py-5 w-3/4 bg-blue-800 hover:bg-blue-900 rounded shadow-md text-blue-50 text-xl text-center">Kontakt</Link>
         </div>
       )}
     </nav>
