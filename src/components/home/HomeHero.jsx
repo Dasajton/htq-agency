@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 const HomeHero = () => {
     return (
         <>
-        <div className=" w-full h-[60vh] mt-24 mx-auto bg-hero-pattern bg-no-repeat bg-cover bg-top flex flex-col gap-16 justify-center items-center">
+        <div className=" w-full h-[60vh] mt-20 mx-auto bg-hero-pattern bg-no-repeat bg-cover bg-top flex flex-col gap-16 justify-center items-center">
             <div className="flex flex-col gap-4 justify-center items-center">
-            <h1 className="bg-blue-100/90 text-4xl md:text-6xl font-bold">High Time <span className="text-blue-600">Quality</span></h1>
+            <h2 className="bg-blue-100/90 text-4xl md:text-6xl font-bold">High Time <span className="text-blue-600">Quality</span></h2>
             <p className="bg-blue-100/90 text-2xl md:text-3xl font-bold">Gemeinsam Zukunft gestalten.</p>
             </div>
 
