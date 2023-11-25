@@ -2,12 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
+// Toggle Dropdown Menu
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+// Close Dropdown Menu on Window Resize
   useEffect(() => {
     const handleResize = () => {
 
@@ -25,7 +27,8 @@ const Header = () => {
 
 
   return (
-    <nav className="navbar w-full h-[5rem] px-4 flex justify-between items-center shadow-sm shadow-green-600 relative">
+    <c>
+    <nav className="navbar w-full h-[5rem] px-4 flex justify-between items-center shadow-sm shadow-green-600 fixed top-0">
       <Link to="/">
         <span className="logo text-5xl font-bold text-black">HT<span className="text-5xl font-bold text-green-500">Q</span></span>
       </Link>
@@ -37,9 +40,9 @@ const Header = () => {
         </ul>
       <button className="dropdown-btn md:hidden cursor-pointer" onClick={toggleMenu}>
         {isMenuOpen ? (
-          <img src="./close-icon.svg" alt="Close Menu" className="close-menu" />
+          <img src="./icons/close-icon.svg" alt="Close Menu" className="close-menu" />
         ) : (
-          <img src="/burger-icon.svg" alt="Burger Menu" className="burger-menu" />
+          <img src="/icons/burger-icon.svg" alt="Burger Menu" className="burger-menu" />
         )}
       </button>
       {isMenuOpen && (
@@ -52,6 +55,7 @@ const Header = () => {
         </div>
       )}
     </nav>
+    </c>
   );
 };
 
