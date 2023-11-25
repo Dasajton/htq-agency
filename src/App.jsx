@@ -8,8 +8,6 @@ import Cooperation from './pages/Cooperation';
 import Contact from './pages/Contact';
 
 const App = () => {
-
-
   return (
     <>
  <Router>
