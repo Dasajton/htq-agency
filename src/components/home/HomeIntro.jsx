@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import ButtonDefault from "../ButtonDefault";
 
 
 const HomeIntro = () => {
@@ -15,9 +15,7 @@ const HomeIntro = () => {
         </p>
         <p className="text-xl font-bold">Ihr Erfolg ist unser Ziel.</p>
     </div>
-        <button className="text-lg mt-6 py-2 px-4 bg-blue-600 hover:bg-blue-700 shadow-md shadow-blue-900 transition text-green-50 rounded">
-            <Link to="/about-us">Mehr über uns</Link>
-        </button>
+    <ButtonDefault to="/about" text="Mehr erfahren" />
     </div>
     </div>
     </>
