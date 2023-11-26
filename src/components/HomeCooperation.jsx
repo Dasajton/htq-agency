@@ -39,7 +39,7 @@ const HomeCooperation = () => {
 
     return (
     <>
-        <div className="w-full bg-blue-100 pb-4">
+        <div className="w-full bg-blue-100 pb-4 mb-24">
             <div className="container mx-auto px-2 flex flex-col items-center justify-center">
             <h2 className="text-3xl sm:text-4xl text-center font-medium text-blue-700 p-8">Kooperationsmöglichkeiten</h2>
             <p className="text-lg text-center mb-4">
