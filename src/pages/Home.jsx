@@ -1,6 +1,7 @@
-import HomeHero from "../components/home/HomeHero";
-import HomeIntro from "../components/home/HomeIntro";
-import HomeService from "../components/home/HomeService";
+import HomeHero from "../components/HomeHero";
+import HomeIntro from "../components/HomeIntro";
+import HomeService from "../components/HomeService";
+import HomeCooperation from "../components/HomeCooperation";
 
 const Home = () => {
     return (
@@ -8,6 +9,7 @@ const Home = () => {
       <HomeHero />
       <HomeIntro />
       <HomeService />
+      <HomeCooperation />
     </>
     )
 }
