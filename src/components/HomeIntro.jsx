@@ -15,7 +15,7 @@ const HomeIntro = () => {
         </p>
         <p className="text-xl font-bold">Ihr Erfolg ist unser Ziel.</p>
     </div>
-    <ButtonDefault to="/about" text="Mehr erfahren" />
+    <ButtonDefault to="/about-us" text="Mehr erfahren" />
     </div>
     </div>
     </>
