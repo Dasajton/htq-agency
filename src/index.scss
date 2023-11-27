@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-    body {
-        @apply w-full;
-    }
+
+
+body, html {
+    max-width: 100%;
+    overflow-x: hidden;
 }
