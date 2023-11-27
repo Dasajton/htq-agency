@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import MenuLink from './MenuLink';
 
 const Header = () => {
 // Toggle Dropdown Menu
@@ -33,10 +34,10 @@ const Header = () => {
         <span className="logo text-5xl font-bold text-black">HT<span className="text-5xl font-bold text-blue-600">Q</span></span>
       </Link>
       <ul className="navbar-list hidden gap-6 text-xl md:flex md:items-center">
-          <Link to="/about-us" className="py-2 px-4 bg-blue-600 hover:bg-blue-700 transition text-blue-50 rounded">Über Uns</Link>
-          <Link to="/services" className="py-2 px-4 bg-blue-600 hover:bg-blue-700 transition text-blue-50 rounded">Unser Service</Link>
-          <Link to="/cooperation" className="py-2 px-4 bg-blue-600 hover:bg-blue-700 transition text-blue-50 rounded">Kooperation</Link>
-          <Link to="/contact" className="py-2 px-4 bg-blue-600 hover:bg-blue-700 transition text-blue-50 rounded">Kontakt</Link>
+          <MenuLink to="/about-us">Über Uns</MenuLink>
+          <MenuLink to="/services">Unser Service</MenuLink>
+          <MenuLink to="/cooperation">Kooperation</MenuLink>
+          <MenuLink to="/contact">Kontakt</MenuLink>
         </ul>
       <button className="dropdown-btn md:hidden cursor-pointer" onClick={toggleMenu}>
         {isMenuOpen ? (

@@ -1,0 +1,1 @@
+- Linktags als component und dann über props rendern 
