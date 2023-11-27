@@ -1,11 +1,11 @@
-
-
-const Services = () => {   
+const Services = () => {
     return (
         <div>
-            <h1 className="mt-24 text-3xl font-bold text-center">Unser Service</h1>
+            <h1 className="mt-24 text-3xl font-bold text-center">
+                Unser Service
+            </h1>
         </div>
     )
 }
 
-export default Services;
+export default Services
