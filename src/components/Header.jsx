@@ -28,7 +28,7 @@ const Header = () => {
 
   return (
     <>
-    <nav className="navbar w-[100vw] h-[5rem] bg-white px-8 flex justify-between items-center shadow-sm shadow-blue-600 fixed top-0">
+    <nav className="navbar w-[100vw] h-[5rem] bg-white px-4 flex justify-between items-center shadow-sm shadow-blue-600 fixed top-0">
       <Link to="/">
         <span className="logo text-5xl font-bold text-black">HT<span className="text-5xl font-bold text-blue-600">Q</span></span>
       </Link>
