@@ -1,14 +1,15 @@
-import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import MenuLink from './MenuLink'
-import DropDownLink from './DropDownLink'
+import React, { useState, useEffect } from "react"
+import { Link } from "react-router-dom"
+import MenuLink from "./MenuLink"
+import DropDownLink from "./DropDownLink"
 
 const Header = () => {
     const links = [
-        { path: '/about-us', label: 'Über Uns' },
-        { path: '/services', label: 'Unser Service' },
-        { path: '/cooperation', label: 'Kooperation' },
-        { path: '/contact', label: 'Kontakt' },
+        { path: "/", label: "Startseite" },
+        { path: "/about-us", label: "Über Uns" },
+        { path: "/services", label: "Unser Service" },
+        { path: "/cooperation", label: "Kooperation" },
+        { path: "/contact", label: "Kontakt" },
     ]
     // Toggle Dropdown Menu
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -25,16 +26,16 @@ const Header = () => {
             }
         }
 
-        window.addEventListener('resize', handleResize)
+        window.addEventListener("resize", handleResize)
 
         return () => {
-            window.removeEventListener('resize', handleResize)
+            window.removeEventListener("resize", handleResize)
         }
     }, [isMenuOpen])
 
     return (
         <>
-            <nav className="navbar w-[100vw] h-[5rem] bg-white px-4 flex justify-between items-center shadow-sm shadow-blue-600 fixed top-0">
+            <nav className="navbar w-[100vw] h-[5rem] bg-white px-6 flex justify-between items-center shadow-sm shadow-blue-600 fixed top-0">
                 <Link to="/">
                     <span className="logo text-5xl font-bold text-black">
                         HT
@@ -43,7 +44,7 @@ const Header = () => {
                         </span>
                     </span>
                 </Link>
-                <ul className="navbar-list hidden gap-6 text-xl md:flex md:items-center">
+                <ul className="navbar-list hidden gap-6 text-xl lg:flex lg:items-center">
                     {links.map((link, index) => (
                         <MenuLink key={index} to={link.path}>
                             {link.label}
@@ -51,7 +52,7 @@ const Header = () => {
                     ))}
                 </ul>
                 <button
-                    className="dropdown-btn md:hidden cursor-pointer"
+                    className="dropdown-btn lg:hidden cursor-pointer"
                     onClick={toggleMenu}
                 >
                     {isMenuOpen ? (
